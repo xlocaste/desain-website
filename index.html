@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMC31xC4B2T0gY4hG6EJ1f9YbJ5G59GpR7vvG" crossorigin="anonymous">
     <style>
         .scroll-container {
             scroll-behavior: smooth; /* Agar scrolling terasa halus */
         }
     </style>
+
 </head>
 <body class="bg-gray-50">
 
@@ -19,7 +22,7 @@
             <div class="relative flex items-center justify-between h-16 bg-teal-100">
                 <div class="flex-1 flex items-center justify-between">
                     <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold text-teal-700">Turbin</h1>
+                        <img src="Produk/Rectangle 1.png" alt="Logo" class="h-6 w-auto md:h-8 lg:h-8 xl:h-10">
                     </div>
                     <!-- Hamburger Button (only visible on mobile) -->
                     <div class="sm:hidden">
@@ -36,30 +39,31 @@
                 <!-- Menu Links -->
                 <div class="hidden sm:flex space-x-4" id="navbar">
                     <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                    <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                    <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Dev</a>
-                    <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                    <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Works</a>
-                    <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Programs</a>
-                    <button href="#" class="bg-black text-white hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
+                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</a>
+                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</a>
+                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</a>
+                    <button class="bg-black text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
                 </div>
             </div>
         </div>
         <!-- Mobile Menu (Hidden by default) -->
         <div class="sm:hidden" id="mobile-menu" style="display: none;">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="#" class="block bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                <a href="#" class="block bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Dev</a>
-                <a href="#" class="block bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                <a href="#" class="block bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Works</a>
-                <a href="#" class="block bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Programs</a>
-                <button href="#" class="block bg-black text-white hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
+            <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</a>
+                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</a>
+                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</a>
+                <button class="block bg-black text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
             </div>
         </div>
     </nav>
     
     <main>
+        <!-- hero -->
         <!-- <div class="bg-white shadow rounded-lg mb-6 p-4 mx-auto md:ml-auto md:mr-12 w-11/12 md:w-1/2">
             <p class="text-2xl mb-4 text-teal-700">Products</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -87,76 +91,93 @@
             </div>
         </div> -->
         <div class="flex flex-col md:flex-row justify-between bg-white rounded-lg">
-            <div class="w-full md:w-1/2 flex flex-col justify-center pl-28">
-                <h2 class="text-8xl font-bold text-red-100 text-left"># 
+            <div class="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-28">
+                <h2 class="text-4xl md:text-8xl font-bold text-red-100 text-left">
+                    # 
                     <a href="#" class="font-light underline text-base text-gray-500">Service - Products</a>
                 </h2>
-                <h2 class="text-3xl font-bold text-teal-700 text-left">From 
+                <h2 class="text-2xl md:text-3xl font-bold text-teal-700 text-left">
+                    From 
                     <a class="text-red-500">Issues</a> to 
                     <a class="text-blue-500">Solution</a>,
                 </h2>
-                <h2 class="text-3xl font-bold text-teal-700 text-left">Create better business flow</h2>
-                <p class="text-gray-600 text-left">Our apps and tech management software is a powerful all-in-one solution to onboard, roster, manage, and pay your employees.</p>
-                <button class="flex justify-center items-center rounded bg-blue-700 px-0 py-2 text-white mt-4 w-44">
+                <h2 class="text-2xl md:text-3xl font-bold text-teal-700 text-left">Create better business flow</h2>
+                <p class="text-gray-600 text-left mt-2">Our apps and tech management software is a powerful all-in-one solution to onboard, roster, manage, and pay your employees.</p>
+                <button class="flex justify-center items-center rounded bg-blue-700 px-4 py-2 text-white mt-4 w-full md:w-44">
                     Consult With Us
                 </button>
             </div>
-            <div class="flex items-center justify-center relative pt-28 pr-20 mt-4 md:mt-0">
+            <div class="flex items-center justify-center relative pt-10 md:pt-28 pr-0 md:pr-20 mt-4 md:mt-0">
                 <img src="Produk/Vector1.png" alt="Descriptive Alt Text" class="absolute right-0 top-0 object-cover h-full w-full" style="z-index: 0; width: 75%; height: auto;">
                 <img src="Produk/Vector.png" alt="Descriptive Alt Text" class="relative object-cover h-full rounded-lg" style="z-index: 1; width: 80%; height: auto;">
             </div>                               
         </div>
-        
     
-        <!-- Bagian Client and Partner -->
-         <div class="pt-40 pb-20 bg-white">
+        <!-- Client and Partner -->
+        <div class="pt-40 pb-20 bg-white">
              <h2 class="text-3xl font-bold text-center mb-8 text-teal-700">Clients & Partners</h2>
-             <p class="text-gray-600 text-center mb-4">
+             <p class="text-gray-600 text-center mb-4 p-8">
                  We believe that creating a thriving ecosystem requires teamwork. <br>
                  When we grow together, every component of this ecosystem can accomplish even greater things.
              </p>
-             <div class="relative flex items-center">
-                 <div class="flex overflow-hidden scroll-container w-full justify-center">
-                     <div class="flex overflow-x-auto space-x-4 p-4" id="logo-container">
-                         <!-- Logo 1 -->
-                         <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
-                             <img src="Produk/Logo.png" alt="Client 1" class="" />
-                         </div>
-                         <!-- Logo 2 -->
-                         <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
-                             <img src="Produk/Logo1.png" alt="Client 2" class="" />
-                         </div>
-                         <!-- Logo 3 -->
-                         <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
-                             <img src="Produk/Logo2.png" alt="Client 3" class="" />
-                         </div>
-                         <!-- Logo 4 -->
-                         <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
-                             <img src="Produk/Logo3.png" alt="Client 4" class="" />
-                         </div>
-                         <!-- Logo 5 -->
-                         <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
-                             <img src="Produk/Logo4.png" alt="Client 5" class="" />
-                         </div>
-                         <!-- Logo 6 -->
-                         <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
-                             <img src="Produk/Logo5.png" alt="Client 6" class="" />
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
+             <div class="relative p-10">
+                <!-- Tombol Panah Kiri -->
+                <button id="scroll-left" class="absolute ml-2 md:ml-20 left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+                    <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+            
+                <div class="flex overflow-hidden scroll-container w-full justify-center">
+                    <div class="flex overflow-x-auto space-x-4 md:space-x-10 p-4" id="logo-container">
+                        <!-- Logo 1 -->
+                        <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
+                            <img src="Produk/Logo.png" alt="Client 1" />
+                        </div>
+                        <!-- Logo 2 -->
+                        <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
+                            <img src="Produk/Logo1.png" alt="Client 2" />
+                        </div>
+                        <!-- Logo 3 -->
+                        <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
+                            <img src="Produk/Logo2.png" alt="Client 3" />
+                        </div>
+                        <!-- Logo 4 -->
+                        <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
+                            <img src="Produk/Logo3.png" alt="Client 4" />
+                        </div>
+                        <!-- Logo 5 -->
+                        <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
+                            <img src="Produk/Logo4.png" alt="Client 5" />
+                        </div>
+                        <!-- Logo 6 -->
+                        <div class="flex-shrink-0 w-32 h-32 rounded-lg flex items-center justify-center bg-white">
+                            <img src="Produk/Logo5.png" alt="Client 6" />
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Tombol Panah Kanan -->
+                <button id="scroll-right" class="absolute mr-2 md:mr-20 right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+                    <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>            
+        </div>
     
         <!-- Tentang Kami -->
         <div class="bg-white p-4">
-            <div class="flex justify-between bg-blue-50 py-8 rounded">
-                <div class="p-4 w-1/2 flex items-center"> 
-                    <div class="w-full pl-44"> 
-                        <h2 class="text-3xl mb-4 text-teal-700">Trust Turbin to <a href="" class="text-blue-500">Boost</a> Your Business to New Heights</h2>
+            <div class="flex flex-col md:flex-row justify-between bg-blue-50 py-8 rounded">
+                <div class="p-4 w-full md:w-1/2 flex items-center">
+                    <div class="w-full">
+                        <h2 class="text-3xl mb-4 text-teal-700">
+                            Trust Turbin to <a href="" class="text-blue-500">Boost</a> Your Business to New Heights
+                        </h2>
                         <p class="text-gray-600">We reached here with our hard work and dedication</p>
                     </div>
                 </div>
-                <div class="p-4 w-1/2">
+                <div class="p-4 w-full md:w-1/2">
                     <div class="grid grid-cols-2 gap-4">
                         <!-- Item 1 -->
                         <div class="flex items-center">
@@ -179,7 +200,7 @@
                             <img src="Produk/Icon2.png" alt="Logo 3" class="w-8 h-8 mr-2">
                             <div>
                                 <h2 class="text-2xl font-bold mb-1 text-blue-700">120++</h2>
-                                <p class="text-gray-600">FInished Projects</p>
+                                <p class="text-gray-600">Finished Projects</p>
                             </div>
                         </div>
                         <!-- Item 4 -->
@@ -191,24 +212,25 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     
         <!-- Turbin Product -->
-        <div class="justify-between bg-white px-28 p-12"> 
-            <div class="bg-white rounded-lg pt-16 p-4 w-4/6 flex items-center"> 
+        <div class="bg-white px-4 sm:px-8 md:px-12 lg:px-28 p-6 md:p-12"> 
+            <div class="bg-white rounded-lg pt-16 p-4 w-full md:w-4/6 flex flex-col md:flex-row items-center"> 
                 <div class="w-full"> 
-                    <h2 class="text-4xl mb-4 text-black">Turbin’s Product makes it easy to 
-                        <a href="" class="text-blue-500">on</a>track, 
-                        <a href="" class="text-blue-500">boost</a> and 
-                        <a href="" class="text-blue-500">support</a> your core business.</h2>
+                    <h2 class="text-3xl md:text-4xl mb-4 text-black">Turbin’s Product makes it easy to 
+                        <a href="#" class="text-blue-500">on</a>track, 
+                        <a href="#" class="text-blue-500">boost</a> and 
+                        <a href="#" class="text-blue-500">support</a> your core business.
+                    </h2>
                     <a href="#" class="text-gray-500">Click & Check it now →</a>
                 </div>
             </div>
             <div class="bg-white mt-6">
-                <div class="flex mb-4">
-                    <div class="w-1/2 p-4 relative">
+                <div class="flex flex-col md:flex-row mb-4">
+                    <div class="w-full md:w-1/2 p-4 relative">
                         <div class="flex justify-between items-center py-2 rounded bg-blue-50 border-b-4 border-blue-500 mb-10">
                             <div class="flex items-center">
                                 <img src="Produk/Rectangle 84.png" alt="Logo" class="ml-2">
@@ -236,16 +258,16 @@
                             <p class="text-gray-600 text-lg">Analisa performa melalui laporan yang bersifat real time</p>
                         </div>                        
                         <div class="flex items-start py-12">
-                            <p class="text-gray-400 text-lg"><a href="" class="text-red-500">*</a>Book a demo to discuss more about your needs</p>
+                            <p class="text-gray-400 text-lg"><a href="#" class="text-red-500">*</a>Book a demo to discuss more about your needs</p>
                         </div>
-                        <div class="flex justify-between items-center py-2 rounded bg-gray-50 border-[1px] border-gray-300 mb-2" style="border-width: 1px;">
+                        <div class="flex justify-between items-center py-2 rounded bg-gray-50 border-[1px] border-gray-300 mb-2">
                             <div class="flex items-center">
                                 <img src="Produk/Rectangle 84.png" alt="Logo" class="ml-2">
                                 <h2 class="text-2xl text-teal-700 ml-2">SUPPLIABLE</h2>
                             </div>
                             <h2 class="text-2xl text-red-500 ml-auto mr-2">→</h2>
                         </div>
-                        <div class="flex justify-between items-center py-2 rounded bg-gray-50 border-gray-300" style="border-width: 1px;">
+                        <div class="flex justify-between items-center py-2 rounded bg-gray-50 border-gray-300 mb-2">
                             <div class="flex items-center">
                                 <img src="Produk/Rectangle 84.png" alt="Logo" class="ml-2">
                                 <h2 class="text-2xl text-teal-700 ml-2">SUPPLIABLE</h2>
@@ -253,7 +275,7 @@
                             <h2 class="text-2xl text-red-500 ml-auto mr-2">→</h2>
                         </div>
                     </div>
-                    <div class="w-1/2 p-4 flex flex-col items-center">
+                    <div class="w-full md:w-1/2 p-4 flex flex-col items-center">
                         <img src="Produk/image 10.png" alt="SUPPLIABLE" class="w-full h-auto mb-4"/>
                         <button class="flex justify-center items-center rounded-lg bg-black px-6 py-2 text-white">
                             Book a Demo
@@ -264,60 +286,139 @@
         </div>
         
         <!-- Request Demo -->
-        <div class="justify-between bg-white p-4 flex">
+        <div class="flex flex-col md:flex-row justify-between bg-white p-4">
             <!-- Form Contact Us -->
-            <div class="shadow rounded-lg p-6 bg-blue-50 mr-4 w-4/6">
-                <div class="p-20">
-                    <p class=" text-teal-700 text-left text-sm">See what we could do for you</p>
-                    <h2 class="text-3xl mb-4 text-teal-700 text-justify">Turbin helps you to save your time & money.<br>
-                        Get a <a href="" class="text-red-500">FREE</a> demo!</h2>
+            <div class="shadow rounded-lg p-6 bg-blue-50 mr-0 md:mr-4 w-full md:w-4/6">
+                <div class="p-4">
+                    <div class="mb-6">
+                        <p class="text-teal-700 text-left text-sm">See what we could do for you</p>
+                        <h2 class="text-3xl mb-4 text-teal-700 text-justify">Turbin helps you to save your time & money.<br>
+                            Get a <a href="#" class="text-red-500">FREE</a> demo!</h2>
+                    </div>
                     <form>
-                        <div class="flex justify-between mb-3">
-                            <div class="w-1/2 pr-2">
-                                <label for="first-name" class="block text-gray-700 text-lg mb-1">First Name <a href="#" class="text-red-500">*</a></label>
+                        <div class="flex flex-col md:flex-row justify-between mb-3">
+                            <div class="w-full md:w-1/2 md:pr-2">
+                                <label for="first-name" class="block text-gray-700 text-lg mb-1">First Name<a href="#" class="text-red-500">*</a></label>
                                 <input type="text" id="first-name" placeholder="First Name" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
                             </div>
-                            <div class="w-1/2 pl-2">
-                                <label for="last-name" class="block text-gray-700 text-lg mb-1">Last Name <a href="#" class="text-red-500">*</a></label>
+                            <div class="w-full md:w-1/2 md:pl-2">
+                                <label for="last-name" class="block text-gray-700 text-lg mb-1">Last Name<a href="#" class="text-red-500">*</a></label>
                                 <input type="text" id="last-name" placeholder="Last Name" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="mb-3">
-                            <label for="email" class="block text-gray-700 text-lg mb-1">Email</label>
+                            <label for="email" class="block text-gray-700 text-lg mb-1">Email<a href="#" class="text-red-500">*</a></label>
                             <input type="email" id="email" placeholder="Your Email" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
                         </div>
-                        <div class="flex justify-between mb-3">
-                            <div class="pr-2">
-                                <label for="first-name" class="block text-gray-700 text-lg mb-1">Phone Number<a href="#" class="text-red-500">*</a></label>
-                                <input type="text" id="first-name" placeholder="First Name" class="w-3/12 shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
+                        <div class="flex flex-col md:flex-row justify-between mb-3">
+                            <div class="w-full md:w-1/2 md:pr-2">
+                                <label for="phone-number" class="block text-gray-700 text-lg mb-1">Phone Number<a href="#" class="text-red-500">*</a></label>
+                                <input type="text" id="phone-number" placeholder="62xxxx" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
                             </div>
-                            <div class="w-5/12 pr-2">
-                                <label for="first-name" class="block text-gray-700 text-lg mb-1">First Name <a href="#" class="text-red-500">*</a></label>
-                                <input type="text" id="first-name" placeholder="First Name" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
+                            <div class="w-full md:w-1/2 md:pl-2">
+                                <label for="location" class="block text-gray-700 text-lg mb-1">Location<a href="#" class="text-red-500">*</a></label>
+                                <input type="text" id="location" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
                             </div>
-                            <div class="w-6/12 pl-2">
-                                <label for="last-name" class="block text-gray-700 text-lg mb-1">Last Name <a href="#" class="text-red-500">*</a></label>
-                                <input type="text" id="last-name" placeholder="Last Name" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
-                            </div>
-                        </div>                        
-                        <div class="mb-3">
-                            <label for="message" class="block text-gray-700 text-lg mb-1">Message</label>
-                            <textarea id="message" placeholder="Your Message" rows="3" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required></textarea>
                         </div>
-                        <div class="flex justify-center">
-                            <button type="submit" class="bg-black hover:bg-gray-500 text-white py-1 px-3 rounded focus:outline-none focus:shadow-outline text-lg">
+                        <div class="flex flex-col md:flex-row justify-between mb-12">
+                            <div class="w-full md:w-1/2 md:pr-2">
+                                <label for="company-size" class="block text-gray-700 text-lg mb-1">Company Size<a href="#" class="text-red-500">*</a></label>
+                                <select id="company-size" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg bg-white">
+                                    <option value="" disabled selected>1 - 50 people</option>
+                                    <option value="1-50">1 - 50 people</option>
+                                    <option value="51-100">51 - 100 people</option>
+                                    <option value="101-500">101 - 500 people</option>
+                                    <option value="501-1000">501 - 1000 people</option>
+                                    <option value="1000+">1000+ people</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/2 md:pl-2">
+                                <label for="company-name" class="block text-gray-700 text-lg mb-1">Company Name<a href="#" class="text-red-500">*</a></label>
+                                <input type="text" id="company-name" placeholder="Company name" class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" required>
+                            </div>
+                        </div>
+                        <div class="flex justify-center w-full">
+                            <button type="submit" class="w-full bg-black hover:bg-gray-500 text-white py-2 px-3 rounded focus:outline-none focus:shadow-outline text-lg">
                                 Request Demo
                             </button>
                         </div>
                     </form>
                 </div>
-            </div>            
-        
-            <!-- Image Section -->
-            <div class="w-2/6 flex items-center justify-center">
+            </div>
+            <div class="hidden md:flex w-full md:w-2/6 items-center justify-center mt-4 md:mt-0">
                 <img src="Produk/Group 2274.png" alt="Contact Us" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-black">
+            <div class="md:flex md:justify-between text-white md:pl-36 p-20 pb-0">
+                <div class="md:w-2/4 md:pr-20">
+                    <img src="Produk/Rectangle 85.png" alt="Contact Us" class="w-36 h-auto mb-6">
+                    <p class="mb-3 leading-relaxed text-justify">Our expert financial consultants provide solutions to help you achieve financial wealth. Trust us to guide you toward a brighter financial future.</p>
+                </div>
+                <div class="md:w-1/4">
+                    <div>
+                        <h1 class="font-semibold text-2xl mb-6">Our Services</h1>
+                        <div class="flex flex-col">
+                            <a href="" class="mb-3">Developper</a>
+                            <a href="" class="mb-3">Works</a>
+                            <a href="" class="mb-3">Programs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/4">
+                    <div>
+                        <h1 class="font-semibold text-2xl mb-6">Explore More</h1>
+                        <div class="flex flex-col">
+                            <a href="" class="mb-3">About us</a>
+                            <a href="" class="mb-3">Blog</a>
+                            <a href="" class="mb-3">Site map</a>
+                            <a href="" class="mb-3">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex md:justify-between text-white md:pl-36 p-20 pt-0 w-2/4">
+                <div class="flex items-center mb-4">
+                    <img src="Produk/Linkedin.png" alt="Logo" class="ml-2 w-5 h-auto">
+                    <a href="" class="text-lg text-white ml-2">TURBIN</a>
+                </div>
+                <div class="flex items-center mb-4">
+                    <img src="Produk/Instagram.png" alt="Logo" class="ml-2 w-5 h-auto">
+                    <a href="" class="text-lg text-white ml-2">turbin.id</a>
+                </div>
+                <div class="flex items-center mb-4">
+                    <img src="Produk/Email.png" alt="Logo" class="ml-2 w-5 h-auto">
+                    <a href="" class="text-lg text-white ml-2">hi@turbin.id</a>
+                </div>
+            </div>
+            <div class="flex justify-center w-full border-t-2 border-gray-500 p-5">
+                <a href="" class="text-white">Copyright © 2024. All Rights Reserved</a>
             </div>
         </div>
     </main>    
 </body>
 </html>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        if (menu.style.display === "none" || menu.style.display === "") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+
+    document.getElementById('scroll-left').addEventListener('click', function() {
+        const container = document.getElementById('logo-container');
+        container.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    document.getElementById('scroll-right').addEventListener('click', function() {
+        const container = document.getElementById('logo-container');
+        container.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+</script>
