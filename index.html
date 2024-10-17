@@ -17,7 +17,7 @@
 <body class="bg-gray-50 max-w-screen-2xl mx-auto">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow" style="z-index: 2;">
+    <nav class="bg-white" style="z-index: 2;">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16 bg-white">
                 <div class="flex-1 flex items-center justify-between">
@@ -49,14 +49,14 @@
             </div>
         </div>
         <!-- Mobile Menu (Hidden by default) -->
-        <div class="sm:hidden" id="mobile-menu" style="display: none;">
-            <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-1">
-                <button id="show-notification" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</button>
-                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</button>
-                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</button>
-                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</button>
-                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</button>
-                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</button>
+        <div class="sm:hidden absolute" id="mobile-menu" style="display: none;">
+            <div class="flex fixed flex-col items-end px-2 pt-2 pb-3 space-y-1 bg-white right-0 h-full">
+                <button id="notification-button" data-action="show" class="block text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</button>
+                <button id="notification-button" data-action="show" class="block text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</button>
+                <button id="notification-button" data-action="show" class="block text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</button>
+                <button id="notification-button" data-action="show" class="block text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</button>
+                <button id="notification-button" data-action="show" class="block text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</button>
+                <button id="notification-button" data-action="show" class="block text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</button>
                 <button class="block bg-black text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
             </div>
         </div>
@@ -66,7 +66,7 @@
 
         <!-- HERO -->
         <div class="flex flex-col md:flex-row justify-between bg-white rounded-lg">
-            <div class="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-28">
+            <div class="w-full md:w-1/2 flex flex-col justify-center p-2 md:p-28">
                 <h2 class="text-4xl md:text-8xl font-bold text-red-100 text-left">
                     # 
                     <a href="#" class="font-light underline text-base text-gray-500">Service - Products</a>
@@ -171,7 +171,7 @@
         </div>
     
         <!-- TENTANG KAMI -->
-        <div class="bg-white p-4">
+        <div class="bg-white p-2 md:p-4">
             <div class="flex flex-col md:flex-row justify-between bg-blue-50 py-8 rounded">
                 <div class="p-4 w-full md:w-1/2 flex items-center md:pl-32">
                     <div class="w-full">
@@ -221,7 +221,7 @@
         </div>
     
         <!-- Turbin Product -->
-        <div class="bg-white px-4 sm:px-8 md:px-12 lg:px-28 p-6 md:p-12"> 
+        <div class="bg-white md:px-12 lg:px-28 p-2 md:p-12"> 
             <div class="bg-white rounded-lg pt-16 p-4 w-full md:w-4/6 flex flex-col md:flex-row items-center"> 
                 <div class="w-full"> 
                     <h2 class="text-3xl md:text-4xl mb-4 text-black">Turbin’s Product makes it easy to 
@@ -296,7 +296,7 @@
                 <div class="p-4">
                     <div class="mb-6">
                         <p class="text-teal-700 text-left text-sm">See what we could do for you</p>
-                        <h2 class="text-3xl mb-4 text-teal-700 text-justify">Turbin helps you to save your time & money.<br>
+                        <h2 class="text-3xl mb-4 text-teal-700 text-left">Turbin helps you to save your time & money.<br>
                             Get a <a href="#" class="text-red-500">FREE</a> demo!</h2>
                     </div>
                     <form>
@@ -356,7 +356,7 @@
         
         <!-- Footer -->
         <div class="bg-black">
-            <div class="md:flex md:justify-between text-white md:pl-36 p-20 pb-0">
+            <div class="md:flex md:justify-between text-white md:pl-36 p-20 px-4 pb-0">
                 <div class="md:w-2/4 md:pr-20">
                     <img src="Produk/Rectangle 85.png" alt="Contact Us" class="w-36 h-auto mb-6">
                     <p class="mb-3 leading-relaxed text-justify">Our expert financial consultants provide solutions to help you achieve financial wealth. Trust us to guide you toward a brighter financial future.</p>
@@ -383,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:flex xl:justify-between text-white md:pl-36 p-20 pt-0 w-2/4">
+            <div class="xl:flex xl:justify-between text-white md:pl-36 p-4 pt-0 w-2/4">
                 <div class="flex items-center mb-4">
                     <img src="Produk/Linkedin.png" alt="Logo" class="w-5 h-auto">
                     <a href="" class="text-lg text-white ml-2">TURBIN</a>
