@@ -14,12 +14,12 @@
     </style>
 
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 max-w-screen-2xl mx-auto">
 
     <!-- Navbar -->
     <nav class="bg-white shadow" style="z-index: 2;">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div class="relative flex items-center justify-between h-16 bg-teal-100">
+            <div class="relative flex items-center justify-between h-16 bg-white">
                 <div class="flex-1 flex items-center justify-between">
                     <div class="flex-shrink-0">
                         <img src="Produk/Rectangle 1.png" alt="Logo" class="h-6 w-auto md:h-8 lg:h-8 xl:h-10">
@@ -38,12 +38,12 @@
                 </div>
                 <!-- Menu Links -->
                 <div class="hidden sm:flex space-x-4" id="navbar">
-                    <a href="#" class="bg-teal-200 text-teal-800 hover:bg-teal-300 hover:text-teal-900 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</a>
-                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</a>
-                    <a href="#" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</a>
+                    <button id="notification-button" data-action="show" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</button>
+                    <button id="notification-button" data-action="show" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</button>
+                    <button id="notification-button" data-action="show" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</button>
+                    <button id="notification-button" data-action="show" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</button>
+                    <button id="notification-button" data-action="show" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</button>
+                    <button id="notification-button" data-action="show" class="bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</button>
                     <button class="bg-black text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
                 </div>
             </div>
@@ -51,45 +51,20 @@
         <!-- Mobile Menu (Hidden by default) -->
         <div class="sm:hidden" id="mobile-menu" style="display: none;">
             <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</a>
-                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</a>
-                <a href="#" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</a>
+                <button id="show-notification" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</button>
+                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About Us</button>
+                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Dev</button>
+                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Pricing</button>
+                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Works</button>
+                <button id="notification-button" data-action="show" class="block bg-white text-black hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Programs</button>
                 <button class="block bg-black text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Book a Demo</button>
             </div>
         </div>
     </nav>
     
     <main>
-        <!-- hero -->
-        <!-- <div class="bg-white shadow rounded-lg mb-6 p-4 mx-auto md:ml-auto md:mr-12 w-11/12 md:w-1/2">
-            <p class="text-2xl mb-4 text-teal-700">Products</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="flex flex-col items-start">
-                    <div class="flex items-center space-x-2">
-                        <img src="Produk/Rectangle 110.jpg" alt="Product Image" class="w-10 h-10 object-cover rounded-full"> 
-                        <h3 class="text-black">Suppliable</h3>
-                    </div>
-                    <p class="text-gray-600">Selesaikan dan Hemat waktu dengan olah inventaris dan stok.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="flex items-center space-x-2">
-                        <img src="Produk/Rectangle 110.jpg" alt="Product Image" class="w-10 h-10 object-cover rounded-full">
-                        <h3 class="text-black">Suppliable</h3>
-                    </div>
-                    <p class="text-gray-600">Selesaikan dan Hemat waktu dengan olah inventaris dan stok.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="flex items-center space-x-2">
-                        <img src="Produk/Rectangle 110.jpg" alt="Product Image" class="w-10 h-10 object-cover rounded-full">
-                        <h3 class="text-black">Suppliable</h3>
-                    </div>
-                    <p class="text-gray-600">Selesaikan dan Hemat waktu dengan olah inventaris dan stok.</p>
-                </div>
-            </div>
-        </div> -->
+
+        <!-- HERO -->
         <div class="flex flex-col md:flex-row justify-between bg-white rounded-lg">
             <div class="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-28">
                 <h2 class="text-4xl md:text-8xl font-bold text-red-100 text-left">
@@ -110,10 +85,39 @@
             <div class="flex items-center justify-center relative pt-10 md:pt-28 pr-0 md:pr-20 mt-4 md:mt-0">
                 <img src="Produk/Vector1.png" alt="Descriptive Alt Text" class="absolute right-0 top-0 object-cover h-full w-full" style="z-index: 0; width: 75%; height: auto;">
                 <img src="Produk/Vector.png" alt="Descriptive Alt Text" class="relative object-cover h-full rounded-lg" style="z-index: 1; width: 80%; height: auto;">
+                <!-- NOTIFIKASI -->
+                <div id="notification" class="hidden fixed top-16 right-20 bg-white shadow rounded-lg mb-6 p-4 mx-auto md:ml-auto md:mr-12 w-11/12 md:w-1/2">
+                    <div id="close-notification">
+                        <p class="text-2xl mb-4 text-teal-700">Products</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center space-x-2">
+                                    <img src="Produk/Rectangle 110.jpg" alt="Product Image" class="w-10 h-10 object-cover rounded-full"> 
+                                    <h3 class="text-black">Suppliable</h3>
+                                </div>
+                                <p class="text-gray-600">Selesaikan dan Hemat waktu dengan olah inventaris dan stok.</p>
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center space-x-2">
+                                    <img src="Produk/Rectangle 110.jpg" alt="Product Image" class="w-10 h-10 object-cover rounded-full">
+                                    <h3 class="text-black">Suppliable</h3>
+                                </div>
+                                <p class="text-gray-600">Selesaikan dan Hemat waktu dengan olah inventaris dan stok.</p>
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center space-x-2">
+                                    <img src="Produk/Rectangle 110.jpg" alt="Product Image" class="w-10 h-10 object-cover rounded-full">
+                                    <h3 class="text-black">Suppliable</h3>
+                                </div>
+                                <p class="text-gray-600">Selesaikan dan Hemat waktu dengan olah inventaris dan stok.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>                               
         </div>
     
-        <!-- Client and Partner -->
+        <!-- CLIENT AND PARTNERS -->
         <div class="pt-40 pb-20 bg-white">
              <h2 class="text-3xl font-bold text-center mb-8 text-teal-700">Clients & Partners</h2>
              <p class="text-gray-600 text-center mb-4 p-8">
@@ -166,12 +170,12 @@
             </div>            
         </div>
     
-        <!-- Tentang Kami -->
+        <!-- TENTANG KAMI -->
         <div class="bg-white p-4">
             <div class="flex flex-col md:flex-row justify-between bg-blue-50 py-8 rounded">
-                <div class="p-4 w-full md:w-1/2 flex items-center">
+                <div class="p-4 w-full md:w-1/2 flex items-center md:pl-32">
                     <div class="w-full">
-                        <h2 class="text-3xl mb-4 text-teal-700">
+                        <h2 class="text-3xl mb-4  text-teal-700">
                             Trust Turbin to <a href="" class="text-blue-500">Boost</a> Your Business to New Heights
                         </h2>
                         <p class="text-gray-600">We reached here with our hard work and dedication</p>
@@ -379,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <div class="md:flex md:justify-between text-white md:pl-36 p-20 pt-0 w-2/4">
+            <div class="xl:flex xl:justify-between text-white md:pl-36 p-20 pt-0 w-2/4">
                 <div class="flex items-center mb-4">
                     <img src="Produk/Linkedin.png" alt="Logo" class="w-5 h-auto">
                     <a href="" class="text-lg text-white ml-2">TURBIN</a>
@@ -419,6 +423,20 @@
     document.getElementById('scroll-right').addEventListener('click', function() {
         const container = document.getElementById('logo-container');
         container.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    const button = document.getElementById('notification-button');
+
+    button.addEventListener('click', function() {
+        const action = button.getAttribute('data-action');
+        
+        if (action === 'show') {
+            notification.classList.remove('hidden');
+            button.setAttribute('data-action', 'hide');
+        } else {
+            notification.classList.add('hidden');
+            button.setAttribute('data-action', 'show');
+        }
     });
 
 </script>
