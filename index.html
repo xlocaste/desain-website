@@ -34,16 +34,30 @@
                 </button>
             </div>
         </div>
-        <ul class="md:flex md:items-center z-50 md:z-auto md:static justify-end bg-white w-full left-0 md:w-auto md:py-0 py-4
-         md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 absolute">
-            <li class="mx-4 my-6 md:my-0 text-right"><a id="notification-button" data-action="show" class=" text-xl duration-500">Services</a></li>
-            <li class="mx-4 my-6 md:my-0 text-right"><a id="notification-button" data-action="show" class=" text-xl duration-500">About Us</a></li>
-            <li class="mx-4 my-6 md:my-0 text-right"><a id="notification-button" data-action="show" class=" text-xl duration-500">Dev</a></li>
-            <li class="mx-4 my-6 md:my-0 text-right"><a id="notification-button" data-action="show" class=" text-xl duration-500">Pricing</a></li>
-            <li class="mx-4 my-6 md:my-0 text-right"><a id="notification-button" data-action="show" class=" text-xl duration-500">Works</a></li>
-            <li class="mx-4 my-6 md:my-0 text-right"><a id="notification-button" data-action="show" class=" text-xl duration-500">Programs</a></li>
-            <li class="mx-4 my-6 md:my-0 text-right"><button class="bg-black text-white duration-500 md:px-6 px-2 py-2 mx-2 hover:bg-gray-800 rounded">Book a Demo</button></li>
+        <ul class="md:flex md:items-center z-50 md:z-auto md:static justify-end bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 absolute">
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <a id="services-button" data-action="show" class="text-xl duration-500">Services</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <a id="aboutus-button" data-action="show" class="text-xl duration-500">About Us</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <a id="dev-button" data-action="show" class="text-xl duration-500">Dev</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <a id="pricing-button" data-action="show" class="text-xl duration-500">Pricing</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <a id="works-button" data-action="show" class="text-xl duration-500">Works</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <a id="programs-button" data-action="show" class="text-xl duration-500">Programs</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 text-right">
+                <button id="book-demo-button" class="bg-black text-white duration-500 md:px-6 px-2 py-2 mx-2 hover:bg-gray-800 rounded">Book a Demo</button>
+            </li>
         </ul>
+        
     </nav>
     
     <main>
@@ -72,7 +86,7 @@
                 <img src="Produk/Vector.png" alt="Descriptive Alt Text" class="relative object-cover h-full rounded-lg" style="z-index: 1; width: 80%; height: auto;">
                 <!-- NOTIFIKASI -->
                 <div id="notification" class="hidden fixed top-16 right-20 bg-white z-50 shadow rounded-lg mb-6 p-4 mx-auto md:ml-auto md:mr-12 w-11/12 md:w-1/2">
-                    <div id="close-notification">
+                    <div id="notification" data-action="show">
                         <p class="text-2xl mb-4 text-teal-700">Products</p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                             <div class="flex flex-col items-start">
@@ -387,40 +401,63 @@
             </div>
         </div>
     </main>    
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100'))
+            : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'));
+        }
+
+        document.getElementById('services-button').addEventListener('click', function() {
+            toggleNotification('services-button');
+        });
+
+        document.getElementById('aboutus-button').addEventListener('click', function() {
+            toggleNotification('aboutus-button');
+        });
+
+        document.getElementById('dev-button').addEventListener('click', function() {
+            toggleNotification('dev-button');
+        });
+
+        document.getElementById('pricing-button').addEventListener('click', function() {
+            toggleNotification('pricing-button');
+        });
+
+        document.getElementById('works-button').addEventListener('click', function() {
+            toggleNotification('works-button');
+        });
+
+        document.getElementById('programs-button').addEventListener('click', function() {
+            toggleNotification('programs-button');
+        });
+
+        function toggleNotification(buttonId) {
+            const button = document.getElementById(buttonId);
+            const notification = document.getElementById('notification');
+
+            const action = button.getAttribute('data-action');
+            
+            if (action === 'show') {
+                notification.classList.remove('hidden');
+                button.setAttribute('data-action', 'hide');
+            } else {
+                notification.classList.add('hidden');
+                button.setAttribute('data-action', 'show');
+            }
+        }
+
+        document.getElementById('scroll-left').addEventListener('click', function() {
+            const container = document.getElementById('logo-container');
+            container.scrollBy({ left: -200, behavior: 'smooth' });
+        });
+
+        document.getElementById('scroll-right').addEventListener('click', function() {
+            const container = document.getElementById('logo-container');
+            container.scrollBy({ left: 200, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
 
-<script>
-    function Menu(e) {
-        let list = document.querySelector('ul');
-
-        e.name === 'menu' ? (e.name = "close" ,list.classList.
-        add('top-[80px]'), list.classList.add('opacity-100')
-    ) : ( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-    }
-
-    document.getElementById('scroll-left').addEventListener('click', function() {
-        const container = document.getElementById('logo-container');
-        container.scrollBy({ left: -200, behavior: 'smooth' });
-    });
-
-    document.getElementById('scroll-right').addEventListener('click', function() {
-        const container = document.getElementById('logo-container');
-        container.scrollBy({ left: 200, behavior: 'smooth' });
-    });
-
-    const button = document.getElementById('notification-button');
-
-    button.addEventListener('click', function() {
-        const action = button.getAttribute('data-action');
-        
-        if (action === 'show') {
-            notification.classList.remove('hidden');
-            button.setAttribute('data-action', 'hide');
-        } else {
-            notification.classList.add('hidden');
-            button.setAttribute('data-action', 'show');
-        }
-    });
-
-</script>
